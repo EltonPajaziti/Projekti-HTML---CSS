@@ -1,0 +1,631 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400&family=Lobster&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400&family=Lobster&family=Preahvihear&family=Vina+Sans&display=swap');
+.pa{
+    background-color: black;
+    height:80px;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding 0 5%:
+}
+.pa ul{
+    list-style: none;
+    display: flex;
+}
+.pa ul li{
+    padding: 10px 30px;
+    position:relative
+}
+.pa ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+ h1 span{
+    color:#fff;
+    
+    font-size: 30px;
+ vertical-align:super;
+}
+.pa ul li a:hover{
+    color:goldenrod;
+}
+.category{
+    display:none;
+}
+.pa ul li:hover .category{
+    display:block;
+    position: absolute;
+    left:0;
+    top:100%;
+    background-color: black;
+}
+.pa ul li:hover .category ul{
+    display: block;
+    margin:10px;
+}
+.pa ul li:hover .category ul li{
+    width:160px;
+    padding: 10px;
+
+}
+.category-1{
+    display: none;
+}
+.category ul li:hover .category-1{
+    display:block;
+    position:absolute;
+    top:0;
+    left:150px;
+    background-color: black;
+}
+.category-2{
+    display: none;
+}
+.category ul li:hover .category-2{
+    display:block;
+    position:absolute;
+    top:0;
+    left:150px;
+    background-color: black;
+}
+.category-3{
+    display: none;
+}
+.category ul li:hover .category-3{
+    display:block;
+    position:absolute;
+    top:0;
+    left:150px;
+    background-color: black;
+}
+
+.bbrendii{
+    display:none;
+}
+.pa ul li:hover .bbrendii{
+    display:block;
+    position: absolute;
+    left:0;
+    top:100%;
+    background-color: black;
+}
+.pa ul li:hover .bbrendii ul{
+    display: block;
+    margin:10px;
+}
+.pa ul li:hover .bbrendii ul li{
+    width:160px;
+    padding: 10px;
+
+}
+.fillimi img{
+  padding-left: 400px;
+  padding-top: 100px;
+  
+}
+.fillimi{
+    padding-bottom: 100px;
+}
+body{
+    background: rgb(189,87,78);
+    background: radial-gradient(circle, rgba(189,87,78,1) 1%, rgba(244,245,111,1) 99%);
+    
+}
+
+.parallax1{
+    background: url('ppp.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.parall{
+    padding: 2% 0;
+}
+.modelet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.modelet .card {
+    border-radius: 5px;
+    border: 1px solid #e3e3e3;
+    padding: 10px;
+}
+.modelet .card .images {
+    margin: 20px 0px;
+    font-size: 32px;
+}
+
+.modelet .card p {
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+a.button {
+    color: #000;
+    font-weight: bold;
+    display: inline-block;
+    padding: 12px 18px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    margin-right: 20px;
+    margin-left: 150px;
+    transition: all .4s ease-in-out;
+    font-family: 'Kanit', sans-serif;
+}
+
+a.button:hover {
+    color: white;
+    background-color:goldenrod;
+    border-color:goldenrod;
+    
+}
+a{
+    text-decoration: none;
+}
+p.air{
+    text-align: center;
+    font-size: 25px;
+    color:black;
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+}
+p.femra{
+    font-size: 60px;
+    font-weight:bold;
+    color:white;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Preahvihear', sans-serif;
+font-family: 'Vina Sans', cursive;
+}
+
+
+.card {
+    border: 2px solid blue;
+    transition: border-color 0.3s ease;
+    position: relative; /* Për të ndërtuar pozicionin e elementit mbi të cilin animacioni do të ndodhë */
+}
+
+.card:hover {
+    border-color: #B16B32;
+    border-width: 4px;
+
+}
+
+.card:hover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #e9d362;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #333333, #e9d362);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333333, #e9d362); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+    animation: leviz 1s linear infinite alternate; /* Animacioni i levizjes */
+    z-index: -1; /* Që të jetë pas elementit kryesor */
+}
+
+@keyframes leviz {
+    0% {
+        transform: translate(-5px, -5px);
+    }
+    100% {
+        transform: translate(5px, 5px);
+    }
+}
+.card .images {
+    transition: transform 2s ease; /* Animacioni i zgjerimit dhe ngushtimit */
+}
+
+.card:hover .images {
+    transform: scale(1.05); /* Efekti i zgjerimit */
+}
+
+.card:hover .images:hover {
+    transform: scale(0.8); /* Efekti i ngushtimit */
+}
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Kanit:wght@200;300;400&family=Lobster&family=Preahvihear&family=Vina+Sans&display=swap');
+
+   .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    background-color: aliceblue;
+}
+
+.container .cont-1 {
+    border-radius: 5px;
+    /* border: 1px solid #B16B32; */
+    padding: 10px;
+}
+p.swaa{
+    font-family: 'Caprasimo', cursive;
+font-family: 'Kanit', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Preahvihear', sans-serif;
+font-family: 'Vina Sans', cursive;
+text-align: center;
+font-size: 30px;
+text-shadow: -2px 4px 2px #B16B32;
+
+}
+.tabelaa {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+    background-color: white;
+}
+.tabelaa .det-1 {
+    border-radius: 5px;
+    /* border: 1px solid #B16B32; */
+    padding: 10px;
+}
+.shop{
+    display: flex;
+    background-color: #000;
+    justify-content: center;
+}
+p.paraa{
+    font-size: 30px;
+    color:white;
+    font-family: 'Kanit', sans-serif;
+}
+
+.tabelaa-2{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: white;
+    height: 80px;
+    margin-top: 0px;
+}
+#shota{
+    font-size: 50px;
+    color:#000;
+}
+.conti-2 {
+    padding-left: 15px;
+    border-radius: 20px;
+}
+.conti-2 :placeholder-shown:hover{
+    background-color: rgb(99, 151, 196);
+    color: #000;
+}
+.conti-2 :placeholder-shown{
+    color:#000;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+p.kontaktii{
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+}
+.conti-2 ::placeholder{
+    color:#000;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+.butoni{
+    text-align: center;
+    font-size: 22px;
+    border-radius: 20px;
+    font-family: 'Kanit', sans-serif;
+    margin-left: 100px;
+
+}
+.butoni:hover{
+    background-color: rgb(99, 151, 196);
+    color: #000;
+}
+.containeri{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    background-image: url('sky.jpg') ;
+}
+iframe{
+    margin:10px;
+    padding-top: 80px;
+    border-radius: 20px;
+    border-color: #000;
+    border-width: 5px;
+}
+.fnd{
+    text-align: center;
+    height: 50px;
+    background-color: aliceblue;
+    font-size: 22px;
+    font-family: 'Kanit', sans-serif;
+    
+}
+label,
+.toggle-menuinput input {
+    display: none;
+}
+#menu-toggler{
+    display: none;
+}
+
+
+/* Stilizimi për madhësi të ekranit deri në 765px */
+@media screen and (max-width: 765px) {
+    
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    label,
+    input {
+        display: inline;
+    }
+
+    .toggle-menu:checked+nav {
+        display: block;
+    }
+
+    .toggle-menu:not(:checked)~nav {
+        display: none;
+    }
+
+    nav {
+        display: none;
+        background-color: #000;
+        position: absolute;
+        top: 100px;
+        left: 0px;
+    }
+
+    nav,
+    nav ul {
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    .mobile-dropdown {
+        display: none;
+    }
+
+    @media screen and (max-width: 765px) {
+        .mobile-dropdown {
+            display: block;
+        }
+    }
+
+    label i {
+        font-size: 1.5em;
+        color: white;
+    }
+
+     h1 span {
+        font-size: 20px;
+    } 
+
+    .pa ul li a {
+        font-size: 10px;
+    }
+    .pa ul li a:hover{
+        color:goldenrod;
+        font-size: 14px;
+    }
+    .pa ul li{
+        padding: 10px 10px;
+        position:relative
+    }
+    .fillimi img {
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+    .fillimi {
+        padding: 50px 0;
+    }  
+
+    Seksioni epara 
+    .epara {
+        padding: 30px 0;
+    }
+    .parallax1 {
+        background-attachment: scroll; Ndryshoni attachment në scroll
+    }
+    .parall {
+        padding: 0;
+    } 
+
+    .tabela-1 {
+        text-align: center; Qendro tekstin horizontalisht
+        padding: 20px 0;
+    } 
+     .tabela-1 img {
+        max-width: 100%; 
+         height: auto;
+    } 
+
+    .modelet {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;} 
+    
+    
+    .modelet .card {
+        margin: 0 auto;
+        border: 1px solid #e3e3e3;
+        padding: 10px;
+        width: 90%;
+    } 
+    
+    .modelet .card .images img {
+        width: 100%;
+       
+    } 
+    
+     .modelet .card p {
+        text-align: center;
+        margin-left: 0;
+        line-height: 20px; /* Përmirëso lexueshmërinë */
+        font-size: 16px; /* Përmirëso madhësinë e tekstit */
+    } 
+    
+    a.button {
+        margin-left: 0;
+        padding: 10px 15px;
+    }
+
+
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    
+    .container .cont-1 {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    
+    .container .cont-2 img {
+        width: 100%; 
+        height: auto; 
+    }
+    
+    p.swaa {
+        font-size: 20px;
+        padding-top: 15px;
+    }
+
+    .tabelaa {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .tabelaa .det-1 {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    
+    .tabelaa .det-2 img {
+        width: 100%; 
+        height: auto; 
+    }
+    
+    .shop {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: #000;
+    }
+
+ 
+    .tabelaa-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding: 10px;
+        margin-top: 0;
+        height: auto;
+    }
+
+    #shota {
+        font-size: 30px;
+    }
+
+    .containeri {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-image: none;
+        padding: 10px;
+    }
+
+    .conti-1,
+    .conti-2 {
+        padding: 10px;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .conti-2 ::placeholder {
+        font-size: 16px;
+    }
+
+    .kontaktii {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .butoni {
+        margin: 0 auto;
+        font-size: 16px;
+        border-radius: 15px;
+    }
+
+    iframe {
+        margin: 0 auto;
+        padding: 10px;
+        border-radius: 15px;
+        border: none; 
+        width: 100%; 
+        height: auto; 
+    }
+
+    .fnd {
+        font-size: 16px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+        margin: 5px 0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
